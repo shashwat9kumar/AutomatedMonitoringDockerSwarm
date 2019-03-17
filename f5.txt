@@ -1,0 +1,2 @@
+The file has been edited 
+Now going to fetch it from the remote repository
