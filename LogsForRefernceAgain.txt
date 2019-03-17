@@ -1,0 +1,148 @@
+***********************************************************************
+CLONING REPOSITORIES
+***********************************************************************
+
+
+
+
+
+
+
+
+
+500068392@upes-500068392 MINGW64 ~
+$ cd e:
+
+500068392@upes-500068392 MINGW64 /e
+$ cd SK
+
+500068392@upes-500068392 MINGW64 /e/SK (master|MERGING)
+$ cd ..
+
+500068392@upes-500068392 MINGW64 /e
+$ mkdir SK1
+                                                                    // creating a local directory
+500068392@upes-500068392 MINGW64 /e
+$ cd SK1
+
+500068392@upes-500068392 MINGW64 /e/SK1
+$ git clone https://github.com/shashwat9kumar/SK                     // cloning my own remote repository(SK) into my local directory(SK1)
+Cloning into 'SK'...
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 29 (delta 7), reused 18 (delta 3), pack-reused 0
+Unpacking objects: 100% (29/29), done.
+
+
+500068392@upes-500068392 MINGW64 /e/SK1
+$ ls                                                          // The contents of folder SK1 shows the cloned repository SK
+SK/
+
+500068392@upes-500068392 MINGW64 /e/SK1
+$ cd SK                                                // moving into the cloned repository
+
+500068392@upes-500068392 MINGW64 /e/SK1/SK (master)
+$ ls
+f1.txt  f2.txt  f3.txt  f4.txt  f5.txt  LogsForReference.txt
+
+500068392@upes-500068392 MINGW64 /e/SK1/SK (master)
+$ git remote -v                                            // git clone clones all the commits, changes, and modifications. 
+origin  https://github.com/shashwat9kumar/SK (fetch)       // git remote -v shows that the origin exists 
+origin  https://github.com/shashwat9kumar/SK (push)
+
+500068392@upes-500068392 MINGW64 /e/SK1/SK (master)
+$ vi LogsForRefernceAgain.txt
+
+500068392@upes-500068392 MINGW64 /e/SK1/SK (master)
+$ git add .
+
+500068392@upes-500068392 MINGW64 /e/SK1/SK (master)
+$ git commit -m" Logs to be added for clone and reset"
+[master 2acdf27]  Logs to be added for clone and reset
+ Committer: SHASHWAT KUMAR <500068392@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 LogsForRefernceAgain.txt
+
+500068392@upes-500068392 MINGW64 /e/SK1/SK (master)
+$ git push origin master                                // The content can be pushed as it is my own repository.Had it not been my own repository I could have made commits in the local machine but not be able to pus them.
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 319 bytes | 159.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/shashwat9kumar/SK
+   dd40dc5..2acdf27  master -> master
+
+500068392@upes-500068392 MINGW64 /e/SK1/SK (master)
+$ cd ..
+
+500068392@upes-500068392 MINGW64 /e/SK1
+$ git clone https://github.com/shivnai/17march19       // Cloning Shivani Tyagi's repository
+Cloning into '17march19'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 9 (delta 1), reused 8 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+
+500068392@upes-500068392 MINGW64 /e/SK1
+$ ls
+17march19/  SK/                                            // ls showing both of the cloned repositories
+
+500068392@upes-500068392 MINGW64 /e/SK1
+$ cd 17march19                                             // moving into the downloaded(cloned) repository
+
+500068392@upes-500068392 MINGW64 /e/SK1/17march19 (master)
+$ ls
+17march.txt  17march2.c  17march3.txt
+
+500068392@upes-500068392 MINGW64 /e/SK1/17march19 (master)
+$ vi file.txt
+
+500068392@upes-500068392 MINGW64 /e/SK1/17march19 (master)
+$ git add .
+
+500068392@upes-500068392 MINGW64 /e/SK1/17march19 (master)
+$ git commit -m "Done by Shashwat Kumar"                             // making commits in my local machine to the cloned repository of Shivani Tyagi
+[master 34999bc] Done by Shashwat Kumar
+ Committer: SHASHWAT KUMAR <500068392@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file.txt
+
+500068392@upes-500068392 MINGW64 /e/SK1/17march19 (master)
+$ git remote -v
+origin  https://github.com/shivnai/17march19 (fetch)
+origin  https://github.com/shivnai/17march19 (push)
+
+500068392@upes-500068392 MINGW64 /e/SK1/17march19 (master)
+$ git push origin master                                                                  // cannot do a push operation on a cloned repository (unless you clone your own repository)
+remote: Permission to shivnai/17march19.git denied to shashwat9kumar.
+fatal: unable to access 'https://github.com/shivnai/17march19/': The requested URL returned error: 403
+
+500068392@upes-500068392 MINGW64 /e/SK1/17march19 (master)
+$
