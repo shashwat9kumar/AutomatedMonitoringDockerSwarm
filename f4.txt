@@ -1,0 +1,2 @@
+These changes are made on the remote repository
+These changes will be pulled to the local machine
