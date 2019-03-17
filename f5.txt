@@ -1,2 +1,8 @@
 The file has been edited 
 Now going to fetch it from the remote repository
+
+
+
+
+This is commit 4
+
