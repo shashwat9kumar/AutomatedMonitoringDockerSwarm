@@ -1,7 +1,0 @@
-This is my 3rd text file
-
-
-
-This is commit 2
-This is commit 3
-
