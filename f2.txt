@@ -1,7 +1,0 @@
-This is my scond text file
-
-
-This is commit 1
-This is commit 2
-
-
