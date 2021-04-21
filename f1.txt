@@ -1,7 +1,0 @@
-This is my 1st text file.
-This is my secomd indertion to this file (for Test commit 2)
-
-
-This is commit1
-
-
